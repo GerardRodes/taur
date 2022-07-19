@@ -1,0 +1,17 @@
+[package]
+name = "taur"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+chrono = { version = "0.4.19", features = ["serde"] }
+crossterm = { version = "0.24.0", features = ["event-stream"] }
+futures = "0.3.21"
+percent-encoding = "2.1.0"
+reqwest = { version = "0.11.11", features = ["json"] }
+serde = { version = "1.0.140", features = ["derive"] }
+tokio = { version = "1.20.0", features = ["full"] }
+tui = "0.18.0"
+unicode-width = "0.1.9"
